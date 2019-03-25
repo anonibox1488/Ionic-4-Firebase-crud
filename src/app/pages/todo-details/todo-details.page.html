@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Detalles de tarea
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content ion-padding>
+  <ion-list lines="full">
+    <ion-item *ngIf="todo">
+      <ion-input type="text" placeholder="Tarea" required [(ngModel)]="todo.task"></ion-input>
+    </ion-item>
+    <ion-item *ngIf="todo">
+      <ion-input type="number" placeholder="Prioridad" required [(ngModel)]="todo.priority"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="saveTodo()">Save</ion-button>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" color="danger">
+    <ion-fab-button color="danger" routerLink="/" routerDirection="forward" (click)="onRemove(todoId)">
+      <ion-icon name="trash"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

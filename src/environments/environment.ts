@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebeConfig: {
+    apiKey: 'AIzaSyDoMKG09vj8I9Hxw_Jrn2oNLWugyAjZMM8',
+    authDomain: 'todo-anonibox.firebaseapp.com',
+    databaseURL: 'https://todo-anonibox.firebaseio.com',
+    projectId: 'todo-anonibox',
+    storageBucket: 'todo-anonibox.appspot.com',
+    messagingSenderId: '421942482939'
+  }
 };
 
 /*
