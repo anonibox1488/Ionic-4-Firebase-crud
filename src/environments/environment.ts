@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebeConfig: {
-    apiKey: 'AIzaSyDoMKG09vj8I9Hxw_Jrn2oNLWugyAjZMM8',
-    authDomain: 'todo-anonibox.firebaseapp.com',
-    databaseURL: 'https://todo-anonibox.firebaseio.com',
-    projectId: 'todo-anonibox',
-    storageBucket: 'todo-anonibox.appspot.com',
-    messagingSenderId: '421942482939'
+    apiKey: '',
+    authDomain: '',
+    databaseURL: '',
+    projectId: '',
+    storageBucket: '',
+    messagingSenderId: ''
   }
 };
 
